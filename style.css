@@ -1,0 +1,137 @@
+/* Making all default margin and padding to 0px */
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Aligning newtab horizontally */
+.newtab{
+    display: inline-flex;
+}
+
+.newtab p{
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Top Search bar  */
+.search-bar1 input{
+    width: 70%;
+    border-radius: 20px;
+    height: 35px;
+    border-style: none;
+}
+
+/* Center search bar */
+.search-bar2{
+    background-color: white;
+    width: 50%;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                        0 -2px 4px rgba(0, 0, 0, 0.1),
+                        2px 0 4px rgba(0, 0, 0, 0.1),
+                        -2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar2 input{
+    width: 50%;
+    border-radius: 40px;
+    border-style: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.search-bar2 [name="search"]{
+    font-size: 15px;
+    color: gray;
+    padding: 10px;
+}
+
+.search-bar2 [name="text"]::placeholder{
+    color: gray;
+    font-size: 17px;
+}
+
+.search-bar2 [name="text"]:focus{
+    outline: none;
+}
+
+.search-bar2 [name="text"]:focus::placeholder{
+    color: transparent;    
+}
+
+.mic_and_lens{
+    margin-left: auto;
+}
+
+.mic_and_lens i{
+    padding: 10px;
+}
+
+/* Add shortcut */
+.create_shortcut{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+.create_shortcut i{
+    font-size: 20px;
+    background-color: #d3e3fd;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.create_shortcut p{
+    text-align: center;
+}
+
+.create_shortcut:hover{
+    background-color: lightgray;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 160px;
+    background-color: #d3e3fd;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+                0 -2px 4px rgba(0, 0, 0, 0.1),
+                2px 0 4px rgba(0, 0, 0, 0.1),
+                -2px 0 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    position: fixed;
+    bottom: 18px;
+    right: 18px;
+
+    font-size: 15px;
+}
+
+.footer i{
+    font-size: 15px;
+    padding-right: 5px;
+}
